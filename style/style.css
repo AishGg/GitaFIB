@@ -1,0 +1,113 @@
+
+#header {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.5px;
+    background-color: red;
+    font-size: x-large;
+}
+
+#mainMenu {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 20px;
+    height: 300px;
+    width: 400px;
+    background-color: yellow;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#mainMenu button{
+    margin-top: 10px;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    height: 50px;
+    width: 275px;
+    font-size: larger;
+    word-spacing: 1.5px;
+  letter-spacing: 1.25px;
+}
+#game{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 20px;
+    height: 400px;
+    width: 900px;
+    background-color:aquamarine;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#levelMenu {
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+}
+
+#levelMenu label {
+    font-size: 16px;
+    color: #333;
+    margin-right: 10px;
+}
+
+#level {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#level:hover {
+    border-color: #45a049;
+    box-shadow: 0 0 8px rgba(69, 160, 73, 0.4);
+}
+
+#level:focus {
+    outline: none;
+    border-color: #3e8e41;
+    box-shadow: 0 0 8px rgba(62, 142, 65, 0.6);
+}
+
+#verseGame{
+    margin: 10px
+}
+.dropZone {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 2px 5px;
+    border-radius: 5px;
+    cursor: pointer; /* Make the cursor a pointer to indicate it's a drop zone */
+  }
+#GetOptions{
+    border: 2px solid white;
+    background-color:rgb(143, 72, 210) ;
+    border-radius: 15px;
+    width: 200px;
+    height: 3 5px;
+    font-size: large;
+}
+
+#GameOptions{
+    display: flex;
+}
+#GameOptions > button{
+    margin: 10px 20px 10px 15px;
+}
+
+#getVerseGame{
+    margin: 10px;
+}

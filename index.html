@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitaFIB</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="./scripts/main.js" type="module"></script>
+</head>
+
+<body>
+
+    <!-- Main Content Area -->
+    <div id="header">
+        <h1>GitaFIB</h1>
+    </div>
+    <div id="mainMenu">
+        <button type="button" id="startGame">Start Game</button>
+    </div>
+
+    <!-- Game Mode Section -->
+    <div id="game" class="mode" style="display: none;"> <!-- Initially hidden -->
+        <div id="levelMenu">
+            <label for="level">Select Level:</label>
+            <select id="level" name="level">
+                <option value="1" selected>Easy</option>
+                <option value="2">Medium</option>
+                <option value="3">Hard</option>
+            </select>
+        </div>
+        <h4 id="verseGame"></h4>
+        <div id="GameOptions"></div>
+        <button id="GetOptions" type="button">Get Options</button>
+        <p id="checkAns"></p>
+        <button id="getVerseGame" type="button">Get Random Shlock</button> <!-- Added button for getting a new verse -->
+        <p id="correctCount">Correct answers: 0</p>
+        <p id="feedback"></p>
+    </div>
+
+</body>
+</html>
