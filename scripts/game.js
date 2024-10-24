@@ -77,7 +77,7 @@ export class Game {
 
     generateOptions() {
         const resultElement = document.getElementById("checkAns");
-        resultElement.innerText = '';
+        resultElement.style.display = 'none';
         const wordsRequest = new Request("words.json");
 
         fetch(wordsRequest)
@@ -120,6 +120,7 @@ export class Game {
 
     checkAnswer(dropZoneId, droppedWord) {
         const resultElement = document.getElementById("checkAns");
+        resultElement.style.display = 'block';
         if (dropZoneId === droppedWord) {
             this.score++; // Increase score for correct answer
             resultElement.innerHTML = "Correct answer!";

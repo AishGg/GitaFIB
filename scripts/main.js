@@ -21,6 +21,8 @@ window.addEventListener("load", function () {
 
         // Handle Get Random Shlock button click
         if (event.target.id === "getVerseGame") {
+            const resultElement = document.getElementById("checkAns");
+            resultElement.style.display = 'none';
             game.getRandomVerse(); // Fetch a new random verse
         }
     });
