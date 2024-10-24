@@ -97,6 +97,10 @@ body {
     margin: 10px;
 }
 
+#verseGame{
+    line-height: 2;
+}
+
 .dropZone {
     background-color: #f0f0f0;
     border: 1px solid #ccc;
