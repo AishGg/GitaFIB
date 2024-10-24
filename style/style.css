@@ -6,7 +6,8 @@
     align-items: center;
     letter-spacing: 1.5px;
     background-color: red;
-    font-size: x-large;
+    font-size: 1.5rem;
+    color: white;
 }
 
 #mainMenu {
@@ -25,14 +26,16 @@
     transform: translate(-50%, -50%);
 }
 #mainMenu button{
-    margin-top: 10px;
-    background-color: antiquewhite;
+    margin-top: 15px;
+    background-color: #f7f1e3;
+    border: none;
     border-radius: 30px;
     height: 50px;
     width: 275px;
-    font-size: larger;
-    word-spacing: 1.5px;
-  letter-spacing: 1.25px;
+    font-size: 1.1rem;
+    letter-spacing: 1.25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 #game{
     display: none;
@@ -92,20 +95,53 @@
     border-radius: 5px;
     cursor: pointer; /* Make the cursor a pointer to indicate it's a drop zone */
   }
-#GetOptions{
-    border: 2px solid white;
-    background-color:rgb(143, 72, 210) ;
+  #GetOptions {
+    border: none;
+    background-color: #9b59b6;
+    color: white;
+    border-radius: 20px;
+    width: 220px;
+    height: 45px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#GetOptions:hover {
+    background-color: #8e44ad;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+#GetOptions:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+#GameOptions > button {
+    margin: 10px 20px 10px 15px;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
     border-radius: 15px;
-    width: 200px;
-    height: 3 5px;
-    font-size: large;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#GameOptions{
-    display: flex;
+#GameOptions > button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-#GameOptions > button{
-    margin: 10px 20px 10px 15px;
+
+#GameOptions > button:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 #getVerseGame{
